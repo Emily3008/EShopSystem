@@ -1,0 +1,37 @@
+﻿@model EShopSystem.Models.InvoiceDetail
+
+@{
+    ViewBag.Title = "_InvoiceDetail";
+}
+
+<h2>_InvoiceDetail</h2>
+
+<div>
+    <h4>InvoiceDetail</h4>
+    <hr />
+    <div ="form-control">
+        @Html.LabelFor(model => model.Quantity, new { @class = "control-label, col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Quantity)
+            @Html.ValidationMessageFor(model => model.Quantity)
+        </div>
+    </div>
+
+    <div ="form-control">
+        @Html.LabelFor(model => model.Price, new { @class = "control-label, col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Price)
+            @Html.ValidationMessageFor(model => model.Price)
+        </div>
+    </div>
+
+    <div ="form-control">
+        <div class="col-md-offset-2 col-md-10">
+           <input type="submit" value="Create" class="btn btn-default"/>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InvoiceDetailId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

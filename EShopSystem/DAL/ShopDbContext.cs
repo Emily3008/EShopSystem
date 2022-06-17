@@ -29,5 +29,8 @@ namespace EShopSystem.DAL
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
+        public System.Data.Entity.DbSet<EShopSystem.Models.Invoice> Invoices { get; set; }
+
+        public System.Data.Entity.DbSet<EShopSystem.Models.InvoiceDetail> InvoiceDetails { get; set; }
     }
 }
