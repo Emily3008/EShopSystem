@@ -140,11 +140,17 @@
     <Compile Include="Migrations\202206171700599_FirstMigration.Designer.cs">
       <DependentUpon>202206171700599_FirstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206171711420_FirstMigration1.cs" />
+    <Compile Include="Migrations\202206171711420_FirstMigration1.Designer.cs">
+      <DependentUpon>202206171711420_FirstMigration1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Invoice.cs" />
+    <Compile Include="Models\InvoiceDetail.cs" />
     <Compile Include="Models\PaymentMode.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -225,6 +231,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202206171700599_FirstMigration.resx">
       <DependentUpon>202206171700599_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206171711420_FirstMigration1.resx">
+      <DependentUpon>202206171711420_FirstMigration1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
